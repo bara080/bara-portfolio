@@ -33,3 +33,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# private personal docs — never commit
+/_private/
+*.docx
+*.xlsx
+job_tracker*
+resume_review_report*
+samuel_lam_reply*
+cover_letter_*
