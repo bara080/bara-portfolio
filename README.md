@@ -1,86 +1,40 @@
-# Bara Portfolio
+# Bara Ahmad
 
-Two-variant Next.js 15 portfolio. Both variants share the same data source so content changes propagate to both automatically.
+Backend and Applied AI engineer based in Brooklyn, NY. I move between AI research and production software — building intelligent, data-intensive systems from experimentation to production.
 
-## Variants
+## What I'm doing right now
 
-- **`/`** — shadcn/ui variant (neutral palette, canonical shadcn primitives)
-- **`/classic`** — classic navy/violet variant (warmer palette, custom styling)
+- Finishing my MS in Computer Science at Brooklyn College (CUNY).
+- Autonomous-vehicle security research at the Research Foundation of CUNY — radar spoofing against radar-camera fusion perception (CenterFusion, CRN, SparseBEV) on the nuScenes dataset.
+- AI Trainer at the Handshake AI Fellowship — developing and evaluating CS and software-engineering prompts to assess LLM reasoning, correctness, and code quality.
+- Technical Co-Founder of **Zinga** — a mobile-first booking platform for stylists, barbers, salons, and independent service providers. Live on iOS, Android, and web.
 
-Both link to each other in their footers so you can preview either without editing the URL.
+## What I care about
 
-## Stack
+Backend architecture and distributed workflows. Data pipelines, multi-tenant SaaS, and analytics infrastructure. Applied AI, LLM evaluation, and agentic automation with real policy boundaries and audit trails. Reproducible ML research and honest eval discipline.
 
-- Next.js 15 (App Router, Server Components)
-- React 18
-- TypeScript strict
-- Tailwind CSS 3.4
-- shadcn/ui primitives (`Button`, `Card`, `Badge`) — hand-scaffolded, ready for `npx shadcn add ...`
-- `lucide-react` icons
-- `next/font` (Inter + JetBrains Mono, self-hosted)
+## What I'm building
 
-## Setup
+- **Zinga** — Booking app for local service businesses. React Native · Expo · Node.js · MongoDB Atlas · Stripe · Vercel. Live at [zingaapp.com](https://zingaapp.com).
+- **LagosMailer** — Multi-tenant email/SMS campaign platform with staged rollouts, retries, quotas, and idempotent execution. Next.js 15 · Supabase · PostgreSQL · Resend.
+- **Zinga OS** — Agentic runtime. AI proposes, the policy engine evaluates, humans approve, provider adapters execute, and every action is audited. n8n · TypeScript · PostgreSQL · AWS.
+- **AV Security Research** — Radar-spoofing attacks on radar-camera fusion perception using the nuScenes dataset. PyTorch · CUDA · MMDetection3D.
 
-```bash
-cd baraPortfolio
-npm install
-npm run dev
-```
+## Day-to-day stack
 
-Open http://localhost:3000 (shadcn variant) and http://localhost:3000/classic.
+Python · Node.js · TypeScript · PostgreSQL · MongoDB · PyTorch · Docker · Vercel · AWS.
 
-## Deploy
+## Open to
 
-Vercel picks it up automatically. `vercel` from the project root, or push to a GitHub repo connected to Vercel.
+Backend, Data Engineering, and Applied AI roles. Remote-first. Open to NYC hybrid. Also Austin, Bay Area, Boston, and Denver.
 
-## Edit content once
+## Get in touch
 
-All text/data lives in `src/lib/portfolio-data.ts`. Both variants read from it, so edits propagate everywhere. Structure:
+- Email — baraahmad232@gmail.com
+- LinkedIn — [linkedin.com/in/abaramoh](https://www.linkedin.com/in/abaramoh/)
+- GitHub — [github.com/bara080](https://github.com/bara080)
+- Portfolio — this repo, deployed on Vercel
 
-- `projects` — featured work cards
-- `experience` — timeline entries (mark `current: true` for the active pulse)
-- `sites` — the 6 live domains
-- `skills` — skill-group columns
+---
 
-## File layout
-
-```
-baraPortfolio/
-├── package.json
-├── next.config.mjs
-├── tsconfig.json
-├── postcss.config.mjs
-├── tailwind.config.ts
-├── components.json        # shadcn config — enables `npx shadcn add ...`
-├── src/
-│   ├── app/
-│   │   ├── layout.tsx     # root layout, fonts, dark class
-│   │   ├── globals.css    # Tailwind + shadcn CSS variables + utilities
-│   │   ├── page.tsx       # shadcn variant
-│   │   └── classic/
-│   │       └── page.tsx   # classic variant
-│   ├── components/ui/
-│   │   ├── button.tsx     # shadcn Button
-│   │   ├── card.tsx       # shadcn Card
-│   │   └── badge.tsx      # shadcn Badge
-│   └── lib/
-│       ├── utils.ts       # `cn` helper
-│       └── portfolio-data.ts  # single source of truth
-```
-
-## Adding more shadcn components
-
-The `components.json` at the root means the shadcn CLI is preconfigured:
-
-```bash
-npx shadcn@latest add dialog dropdown-menu tabs
-```
-
-## Pick one variant to ship
-
-When you're ready, delete the variant you don't want:
-
-- Keep shadcn only: `rm -rf src/app/classic`
-- Keep classic only: `mv src/app/classic/page.tsx src/app/page.tsx` (overwrite root)
-
-Both variants coexist for now so you can decide later.
+*This repo hosts my personal portfolio site. Built with Next.js 15, shadcn/ui, Tailwind, and Lucide. Run `npm install && npm run dev` to preview locally.*
