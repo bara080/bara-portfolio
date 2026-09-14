@@ -36,6 +36,7 @@ next-env.d.ts
 
 # private personal docs — never commit
 /_private/
+/resume/
 *.docx
 *.xlsx
 job_tracker*
